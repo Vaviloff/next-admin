@@ -36,12 +36,28 @@ const buildGeneratedFilesTo = async (
         const mjsFiles = glob.sync("**/*.mjs", { cwd: outDir, absolute: true });
         mjsFiles.forEach((file) => {
           let content = fs.readFileSync(file, "utf8");
-          // Replace relative imports to use .mjs extension
+          // Replace relative imports to use .mjs extension. Schemas with
+          // Prisma `importFileExtension = "ts"` emit `./x.ts` specifiers, so
+          // strip a trailing `.ts` just like `.js` to avoid `./x.ts.mjs`.
           content = content.replace(
-            /from\s+['"](\.[^'"]*?)(?:\.js)?['"]/g,
+            /from\s+['"](\.[^'"]*?)(?:\.js|\.ts)?['"]/g,
             "from '$1.mjs'"
           );
           fs.writeFileSync(file, content, "utf8");
+        });
+      } else {
+        const jsFiles = glob.sync("**/*.js", { cwd: outDir, absolute: true });
+        jsFiles.forEach((file) => {
+          const content = fs.readFileSync(file, "utf8");
+          // Same `.ts` handling for CJS requires: `./x.ts` refers to the
+          // emitted `./x.js`, so drop the extension for Node resolution.
+          const updated = content.replace(
+            /(require\(\s*['"]\.[^'"]*?)\.ts(['"]\))/g,
+            "$1$2"
+          );
+          if (updated !== content) {
+            fs.writeFileSync(file, updated, "utf8");
+          }
         });
       }
     })

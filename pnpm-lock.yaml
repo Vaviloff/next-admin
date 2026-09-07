@@ -732,8 +732,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(patch_hash=6fire4cs5cqqlzmfljqqxabt44)
       next-themes:
-        specifier: ^0.3.0
-        version: 0.3.0(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+        specifier: ^0.4.6
+        version: 0.4.6(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
       nextjs-toploader:
         specifier: ^1.6.6
         version: 1.6.12(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
@@ -8203,12 +8203,6 @@ packages:
     resolution: {integrity: sha512-07zs+A+oyCmpJm4qwo5M8pjnBIrYgnd2eox77wafB1shdCSxbaHNwejCKMK2e2sPtJ1u+iNPG1bG4mO6xwOz6g==}
     peerDependencies:
       next: 15.1.11
-
-  next-themes@0.3.0:
-    resolution: {integrity: sha512-/QHIrsYpd6Kfk7xakK4svpDI5mmXP0gfvCoJdGpZQ2TOrQZmsW0QxjaiLn8wbIKjtm4BTSqLoix4lxYYOnLJ/w==}
-    peerDependencies:
-      react: 19.0.3
-      react-dom: 19.0.3
 
   next-themes@0.4.6:
     resolution: {integrity: sha512-pZvgD5L0IEvX5/9GWyHMf3m8BKiVQwsCMHfoFosXtXBMnaS0ZnIJ9ST4b4NqLVKDEm8QBxoNNGNaBv2JNF6XNA==}
@@ -19671,11 +19665,6 @@ snapshots:
     transitivePeerDependencies:
       - '@swc/helpers'
       - superjson
-
-  next-themes@0.3.0(react-dom@19.0.3(react@19.0.3))(react@19.0.3):
-    dependencies:
-      react: 19.0.3
-      react-dom: 19.0.3(react@19.0.3)
 
   next-themes@0.4.6(react-dom@19.0.3(react@19.0.3))(react@19.0.3):
     dependencies:
