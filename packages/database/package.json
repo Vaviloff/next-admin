@@ -39,8 +39,8 @@
     "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
-    "@premieroctet/next-admin": "workspace:*",
-    "@premieroctet/next-admin-generator-prisma": "workspace:*",
+    "@premieroctet/next-admin": "^8.4.2",
+    "@premieroctet/next-admin-generator-prisma": "^1.1.0",
     "@prisma/adapter-pg": "catalog:prisma",
     "@prisma/client": "catalog:prisma"
   },

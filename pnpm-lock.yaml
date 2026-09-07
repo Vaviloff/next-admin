@@ -106,7 +106,7 @@ importers:
         version: 1.4.4
       next:
         specifier: 15.1.11
-        version: 15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+        version: 15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
       nextra:
         specifier: 3.2.5
         version: 3.2.5(@types/react@19.1.8)(acorn@8.15.0)(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)(typescript@5.8.3)
@@ -166,8 +166,8 @@ importers:
         specifier: ^1.5.7
         version: 1.5.13
       '@premieroctet/next-admin':
-        specifier: workspace:*
-        version: link:../../packages/next-admin
+        specifier: ^8.4.2
+        version: 8.4.2(@prisma/client@6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3))(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(monaco-editor@0.52.2)(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(prisma@6.12.0(typescript@5.8.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.17))(@types/node@17.0.45)(typescript@5.8.3)))(typescript@5.8.3)
       '@prisma/client':
         specifier: catalog:prisma
         version: 6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3)
@@ -182,7 +182,7 @@ importers:
         version: link:../../packages/examples-common
       next:
         specifier: 15.1.11
-        version: 15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+        version: 15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
       next-intl:
         specifier: ^4.3.5
         version: 4.3.5(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react@19.0.3)(typescript@5.8.3)
@@ -245,8 +245,8 @@ importers:
   apps/example-remix:
     dependencies:
       '@premieroctet/next-admin':
-        specifier: workspace:*
-        version: link:../../packages/next-admin
+        specifier: ^8.4.2
+        version: 8.4.2(@prisma/client@6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3))(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(monaco-editor@0.52.2)(next@15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(prisma@6.12.0(typescript@5.8.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.17))(@types/node@25.0.2)(typescript@5.8.3)))(typescript@5.8.3)
       '@remix-run/node':
         specifier: catalog:remix
         version: 2.16.8(typescript@5.8.3)
@@ -333,8 +333,8 @@ importers:
   apps/example-start:
     dependencies:
       '@premieroctet/next-admin':
-        specifier: workspace:*
-        version: link:../../packages/next-admin
+        specifier: ^8.4.2
+        version: 8.4.2(@prisma/client@6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3))(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(monaco-editor@0.52.2)(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(prisma@6.12.0(typescript@5.8.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)(tailwindcss@4.1.11)(typescript@5.8.3)
       '@prisma/client':
         specifier: catalog:prisma
         version: 6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3)
@@ -458,11 +458,11 @@ importers:
   packages/database:
     dependencies:
       '@premieroctet/next-admin':
-        specifier: workspace:*
-        version: link:../next-admin
+        specifier: ^8.4.2
+        version: 8.4.2(@prisma/client@6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3))(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(monaco-editor@0.52.2)(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(prisma@6.12.0(typescript@5.8.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)(tailwindcss@4.1.11)(typescript@5.8.3)
       '@premieroctet/next-admin-generator-prisma':
-        specifier: workspace:*
-        version: link:../generator-prisma
+        specifier: ^1.1.0
+        version: 1.1.0
       '@prisma/adapter-pg':
         specifier: catalog:prisma
         version: 6.12.0
@@ -511,7 +511,7 @@ importers:
         version: 7.31.8(eslint@7.32.0)
       next:
         specifier: 15.1.11
-        version: 15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+        version: 15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
     devDependencies:
       '@typescript-eslint/parser':
         specifier: ^8.14.0
@@ -526,8 +526,8 @@ importers:
         specifier: ^9.4.0
         version: 9.8.0
       '@premieroctet/next-admin':
-        specifier: workspace:*
-        version: link:../next-admin
+        specifier: ^8.4.2
+        version: 8.4.2(@prisma/client@6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3))(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(monaco-editor@0.52.2)(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(prisma@6.12.0(typescript@5.8.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)(tailwindcss@4.1.11)(typescript@5.8.3)
       '@prisma/client':
         specifier: catalog:prisma
         version: 6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3)
@@ -736,7 +736,7 @@ importers:
         version: 0.4.6(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
       nextjs-toploader:
         specifier: ^1.6.6
-        version: 1.6.12(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+        version: 1.6.12(next@15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
       nprogress:
         specifier: ^0.2.0
         version: 0.2.0
@@ -855,7 +855,7 @@ importers:
         version: 26.1.0
       next:
         specifier: 15.1.11
-        version: 15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+        version: 15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
       postcss:
         specifier: ^8.4.21
         version: 8.5.6
@@ -2768,6 +2768,23 @@ packages:
   '@poppinss/exception@1.2.1':
     resolution: {integrity: sha512-aQypoot0HPSJa6gDPEPTntc1GT6QINrSbgRlRhadGW2WaYqUK3tK4Bw9SBMZXhmxd3GeAlZjVcODHgiu+THY7A==}
     engines: {node: '>=18'}
+
+  '@premieroctet/next-admin-generator-prisma@1.1.0':
+    resolution: {integrity: sha512-eCKIrBJaPFjSN4rSagzEx7vsAfYkGihYIwYMD8XkkkL6ZsO2OsyXHJVdjis5lbms7SxhP6bhidUfXBiiPZh1wA==}
+    hasBin: true
+
+  '@premieroctet/next-admin-json-schema@0.0.1':
+    resolution: {integrity: sha512-s8YUK+xir4fYB3hzK77YXtw6DqGgeW/zRf5dXDItAPlNTmkKVoijrdByeRKYVxfBe2CegnxvvPmonoetLUf34A==}
+
+  '@premieroctet/next-admin@8.4.2':
+    resolution: {integrity: sha512-jG4AgHs6D6Nc03TxbRT2IvkqflOaABOExjwZoorXSnuUmtX08HfXOKKAQpdIUxpsF56JsRyrdJ9RtA64bfqAmw==}
+    peerDependencies:
+      '@prisma/client': '>=5'
+      prisma: '>=5'
+      react: 19.0.3
+      react-dom: 19.0.3
+      tailwindcss: '>=3'
+      typescript: '>=4'
 
   '@prisma/adapter-pg@6.12.0':
     resolution: {integrity: sha512-lyNDD0oJntw9D6WilEUCXqaKPZWDLNwePbUZogadhIJ4qICaIoPXQuLGGe7auXdvGcfesCb1y1UKvdYj0iFgQg==}
@@ -8204,6 +8221,12 @@ packages:
     peerDependencies:
       next: 15.1.11
 
+  next-themes@0.3.0:
+    resolution: {integrity: sha512-/QHIrsYpd6Kfk7xakK4svpDI5mmXP0gfvCoJdGpZQ2TOrQZmsW0QxjaiLn8wbIKjtm4BTSqLoix4lxYYOnLJ/w==}
+    peerDependencies:
+      react: 19.0.3
+      react-dom: 19.0.3
+
   next-themes@0.4.6:
     resolution: {integrity: sha512-pZvgD5L0IEvX5/9GWyHMf3m8BKiVQwsCMHfoFosXtXBMnaS0ZnIJ9ST4b4NqLVKDEm8QBxoNNGNaBv2JNF6XNA==}
     peerDependencies:
@@ -12754,6 +12777,201 @@ snapshots:
       supports-color: 10.0.0
 
   '@poppinss/exception@1.2.1': {}
+
+  '@premieroctet/next-admin-generator-prisma@1.1.0':
+    dependencies:
+      '@premieroctet/next-admin-json-schema': 0.0.1
+      '@prisma/generator-helper': 5.22.0
+      '@prisma/internals': 5.22.0
+      esbuild: 0.24.2
+      glob: 11.0.3
+      prisma-json-schema-generator: 5.1.5
+      typescript: 5.8.3
+
+  '@premieroctet/next-admin-json-schema@0.0.1': {}
+
+  '@premieroctet/next-admin@8.4.2(@prisma/client@6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3))(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(monaco-editor@0.52.2)(next@15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(prisma@6.12.0(typescript@5.8.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.17))(@types/node@25.0.2)(typescript@5.8.3)))(typescript@5.8.3)':
+    dependencies:
+      '@dnd-kit/core': 6.3.1(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@dnd-kit/sortable': 8.0.0(@dnd-kit/core@6.3.1(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react@19.0.3)
+      '@dnd-kit/utilities': 3.2.2(react@19.0.3)
+      '@headlessui/react': 2.2.4(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@heroicons/react': 2.2.0(react@19.0.3)
+      '@picocss/pico': 1.5.13
+      '@prisma/client': 6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3)
+      '@radix-ui/react-checkbox': 1.3.2(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-dialog': 1.1.14(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-dropdown-menu': 2.1.15(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-select': 2.2.5(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-slot': 1.2.3(@types/react@19.1.8)(react@19.0.3)
+      '@radix-ui/react-switch': 1.2.5(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-tooltip': 1.2.7(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-visually-hidden': 1.2.3(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@rjsf/core': 6.0.0-beta.11(@rjsf/utils@6.0.0-beta.11(react@19.0.3))(react@19.0.3)
+      '@rjsf/utils': 6.0.0-beta.11(react@19.0.3)
+      '@rjsf/validator-ajv8': 6.0.0-beta.7(@rjsf/utils@6.0.0-beta.11(react@19.0.3))
+      '@tanstack/react-table': 8.21.3(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@types/formidable': 3.4.5
+      body-parser: 1.20.3
+      class-variance-authority: 0.6.1
+      clsx: 1.2.1
+      csstype: 3.1.3
+      dnd-kit-sortable-tree: 0.1.73(@dnd-kit/core@6.3.1(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(@dnd-kit/sortable@8.0.0(@dnd-kit/core@6.3.1(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react@19.0.3))(@dnd-kit/utilities@3.2.2(react@19.0.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      formidable: 3.5.4
+      lodash.clonedeep: 4.5.0
+      lodash.debounce: 4.0.8
+      lodash.get: 4.4.2
+      lodash.merge: 4.6.2
+      lodash.range: 3.2.0
+      lodash.set: 4.3.2
+      lodash.sortby: 4.7.0
+      lodash.unset: 4.5.2
+      lodash.update: 4.10.2
+      next-connect: 1.0.0(patch_hash=6fire4cs5cqqlzmfljqqxabt44)
+      next-themes: 0.3.0(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      nextjs-toploader: 1.6.12(next@15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      nprogress: 0.2.0
+      prisma: 6.12.0(typescript@5.8.3)
+      react: 19.0.3
+      react-dom: 19.0.3(react@19.0.3)
+      tailwind-merge: 2.6.0
+      tailwindcss: 3.4.17(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.17))(@types/node@25.0.2)(typescript@5.8.3))
+      typescript: 5.8.3
+      util: 0.12.5
+      zod: 3.25.67
+    optionalDependencies:
+      '@monaco-editor/react': 4.7.0(monaco-editor@0.52.2)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      slate: 0.101.5
+      slate-history: 0.100.0(slate@0.101.5)
+      slate-react: 0.101.6(react-dom@19.0.3(react@19.0.3))(react@19.0.3)(slate@0.101.5)
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@types/react-dom'
+      - monaco-editor
+      - next
+      - supports-color
+
+  '@premieroctet/next-admin@8.4.2(@prisma/client@6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3))(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(monaco-editor@0.52.2)(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(prisma@6.12.0(typescript@5.8.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.17))(@types/node@17.0.45)(typescript@5.8.3)))(typescript@5.8.3)':
+    dependencies:
+      '@dnd-kit/core': 6.3.1(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@dnd-kit/sortable': 8.0.0(@dnd-kit/core@6.3.1(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react@19.0.3)
+      '@dnd-kit/utilities': 3.2.2(react@19.0.3)
+      '@headlessui/react': 2.2.4(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@heroicons/react': 2.2.0(react@19.0.3)
+      '@picocss/pico': 1.5.13
+      '@prisma/client': 6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3)
+      '@radix-ui/react-checkbox': 1.3.2(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-dialog': 1.1.14(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-dropdown-menu': 2.1.15(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-select': 2.2.5(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-slot': 1.2.3(@types/react@19.1.8)(react@19.0.3)
+      '@radix-ui/react-switch': 1.2.5(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-tooltip': 1.2.7(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-visually-hidden': 1.2.3(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@rjsf/core': 6.0.0-beta.11(@rjsf/utils@6.0.0-beta.11(react@19.0.3))(react@19.0.3)
+      '@rjsf/utils': 6.0.0-beta.11(react@19.0.3)
+      '@rjsf/validator-ajv8': 6.0.0-beta.7(@rjsf/utils@6.0.0-beta.11(react@19.0.3))
+      '@tanstack/react-table': 8.21.3(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@types/formidable': 3.4.5
+      body-parser: 1.20.3
+      class-variance-authority: 0.6.1
+      clsx: 1.2.1
+      csstype: 3.1.3
+      dnd-kit-sortable-tree: 0.1.73(@dnd-kit/core@6.3.1(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(@dnd-kit/sortable@8.0.0(@dnd-kit/core@6.3.1(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react@19.0.3))(@dnd-kit/utilities@3.2.2(react@19.0.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      formidable: 3.5.4
+      lodash.clonedeep: 4.5.0
+      lodash.debounce: 4.0.8
+      lodash.get: 4.4.2
+      lodash.merge: 4.6.2
+      lodash.range: 3.2.0
+      lodash.set: 4.3.2
+      lodash.sortby: 4.7.0
+      lodash.unset: 4.5.2
+      lodash.update: 4.10.2
+      next-connect: 1.0.0(patch_hash=6fire4cs5cqqlzmfljqqxabt44)
+      next-themes: 0.3.0(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      nextjs-toploader: 1.6.12(next@15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      nprogress: 0.2.0
+      prisma: 6.12.0(typescript@5.8.3)
+      react: 19.0.3
+      react-dom: 19.0.3(react@19.0.3)
+      tailwind-merge: 2.6.0
+      tailwindcss: 3.4.17(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.17))(@types/node@17.0.45)(typescript@5.8.3))
+      typescript: 5.8.3
+      util: 0.12.5
+      zod: 3.25.67
+    optionalDependencies:
+      '@monaco-editor/react': 4.7.0(monaco-editor@0.52.2)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      slate: 0.101.5
+      slate-history: 0.100.0(slate@0.101.5)
+      slate-react: 0.101.6(react-dom@19.0.3(react@19.0.3))(react@19.0.3)(slate@0.101.5)
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@types/react-dom'
+      - monaco-editor
+      - next
+      - supports-color
+
+  '@premieroctet/next-admin@8.4.2(@prisma/client@6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3))(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(monaco-editor@0.52.2)(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(prisma@6.12.0(typescript@5.8.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)(tailwindcss@4.1.11)(typescript@5.8.3)':
+    dependencies:
+      '@dnd-kit/core': 6.3.1(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@dnd-kit/sortable': 8.0.0(@dnd-kit/core@6.3.1(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react@19.0.3)
+      '@dnd-kit/utilities': 3.2.2(react@19.0.3)
+      '@headlessui/react': 2.2.4(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@heroicons/react': 2.2.0(react@19.0.3)
+      '@picocss/pico': 1.5.13
+      '@prisma/client': 6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3)
+      '@radix-ui/react-checkbox': 1.3.2(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-dialog': 1.1.14(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-dropdown-menu': 2.1.15(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-select': 2.2.5(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-slot': 1.2.3(@types/react@19.1.8)(react@19.0.3)
+      '@radix-ui/react-switch': 1.2.5(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-tooltip': 1.2.7(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@radix-ui/react-visually-hidden': 1.2.3(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@rjsf/core': 6.0.0-beta.11(@rjsf/utils@6.0.0-beta.11(react@19.0.3))(react@19.0.3)
+      '@rjsf/utils': 6.0.0-beta.11(react@19.0.3)
+      '@rjsf/validator-ajv8': 6.0.0-beta.7(@rjsf/utils@6.0.0-beta.11(react@19.0.3))
+      '@tanstack/react-table': 8.21.3(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      '@types/formidable': 3.4.5
+      body-parser: 1.20.3
+      class-variance-authority: 0.6.1
+      clsx: 1.2.1
+      csstype: 3.1.3
+      dnd-kit-sortable-tree: 0.1.73(@dnd-kit/core@6.3.1(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(@dnd-kit/sortable@8.0.0(@dnd-kit/core@6.3.1(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react@19.0.3))(@dnd-kit/utilities@3.2.2(react@19.0.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      formidable: 3.5.4
+      lodash.clonedeep: 4.5.0
+      lodash.debounce: 4.0.8
+      lodash.get: 4.4.2
+      lodash.merge: 4.6.2
+      lodash.range: 3.2.0
+      lodash.set: 4.3.2
+      lodash.sortby: 4.7.0
+      lodash.unset: 4.5.2
+      lodash.update: 4.10.2
+      next-connect: 1.0.0(patch_hash=6fire4cs5cqqlzmfljqqxabt44)
+      next-themes: 0.3.0(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      nextjs-toploader: 1.6.12(next@15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      nprogress: 0.2.0
+      prisma: 6.12.0(typescript@5.8.3)
+      react: 19.0.3
+      react-dom: 19.0.3(react@19.0.3)
+      tailwind-merge: 2.6.0
+      tailwindcss: 4.1.11
+      typescript: 5.8.3
+      util: 0.12.5
+      zod: 3.25.67
+    optionalDependencies:
+      '@monaco-editor/react': 4.7.0(monaco-editor@0.52.2)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      slate: 0.101.5
+      slate-history: 0.100.0(slate@0.101.5)
+      slate-react: 0.101.6(react-dom@19.0.3(react@19.0.3))(react@19.0.3)(slate@0.101.5)
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@types/react-dom'
+      - monaco-editor
+      - next
+      - supports-color
 
   '@prisma/adapter-pg@6.12.0':
     dependencies:
@@ -19644,7 +19862,7 @@ snapshots:
     dependencies:
       '@formatjs/intl-localematcher': 0.5.10
       negotiator: 1.0.0
-      next: 15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      next: 15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
       react: 19.0.3
       use-intl: 4.3.5(react@19.0.3)
     optionalDependencies:
@@ -19653,25 +19871,30 @@ snapshots:
   next-superjson-plugin@0.6.3(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(superjson@2.2.2):
     dependencies:
       hoist-non-react-statics: 3.3.2
-      next: 15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      next: 15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
       superjson: 2.2.2
 
   next-superjson@1.0.7(@swc/helpers@0.5.17)(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(superjson@2.2.2):
     dependencies:
       '@swc/core': 1.4.17(@swc/helpers@0.5.17)
       '@swc/types': 0.1.12
-      next: 15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      next: 15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
       next-superjson-plugin: 0.6.3(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(superjson@2.2.2)
     transitivePeerDependencies:
       - '@swc/helpers'
       - superjson
+
+  next-themes@0.3.0(react-dom@19.0.3(react@19.0.3))(react@19.0.3):
+    dependencies:
+      react: 19.0.3
+      react-dom: 19.0.3(react@19.0.3)
 
   next-themes@0.4.6(react-dom@19.0.3(react@19.0.3))(react@19.0.3):
     dependencies:
       react: 19.0.3
       react-dom: 19.0.3(react@19.0.3)
 
-  next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3):
+  next@15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3):
     dependencies:
       '@next/env': 15.1.11
       '@swc/counter': 0.1.3
@@ -19681,7 +19904,7 @@ snapshots:
       postcss: 8.4.31
       react: 19.0.3
       react-dom: 19.0.3(react@19.0.3)
-      styled-jsx: 5.1.6(react@19.0.3)
+      styled-jsx: 5.1.6(@babel/core@7.27.7)(react@19.0.3)
     optionalDependencies:
       '@next/swc-darwin-arm64': 15.1.9
       '@next/swc-darwin-x64': 15.1.9
@@ -19697,9 +19920,9 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextjs-toploader@1.6.12(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3):
+  nextjs-toploader@1.6.12(next@15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3):
     dependencies:
-      next: 15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      next: 15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
       nprogress: 0.2.0
       prop-types: 15.8.1
       react: 19.0.3
@@ -19711,7 +19934,7 @@ snapshots:
       clsx: 2.1.1
       escape-string-regexp: 5.0.0
       flexsearch: 0.7.43
-      next: 15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      next: 15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
       next-themes: 0.4.6(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
       nextra: 3.2.5(@types/react@19.1.8)(acorn@8.15.0)(next@15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3))(react-dom@19.0.3(react@19.0.3))(react@19.0.3)(typescript@5.8.3)
       react: 19.0.3
@@ -19742,7 +19965,7 @@ snapshots:
       mdast-util-gfm: 3.1.0
       mdast-util-to-hast: 13.2.0
       negotiator: 1.0.0
-      next: 15.1.11(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
+      next: 15.1.11(@babel/core@7.27.7)(@playwright/test@1.53.1)(react-dom@19.0.3(react@19.0.3))(react@19.0.3)
       p-limit: 6.2.0
       react: 19.0.3
       react-dom: 19.0.3(react@19.0.3)
@@ -21672,10 +21895,12 @@ snapshots:
     dependencies:
       inline-style-parser: 0.2.4
 
-  styled-jsx@5.1.6(react@19.0.3):
+  styled-jsx@5.1.6(@babel/core@7.27.7)(react@19.0.3):
     dependencies:
       client-only: 0.0.1
       react: 19.0.3
+    optionalDependencies:
+      '@babel/core': 7.27.7
 
   stylis@4.3.6: {}
 

@@ -1,6 +1,6 @@
 ---
-"@premieroctet/next-admin": patch
-"@premieroctet/next-admin-generator-prisma": patch
+"@vaviloff/next-admin": patch
+"@vaviloff/next-admin-generator-prisma": patch
 ---
 
 Support React 19 theme resolution and Prisma `importFileExtension = "ts"` schemas.

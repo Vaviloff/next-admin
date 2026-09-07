@@ -86,7 +86,7 @@ export const updateNextAdminPrismaTypesImport = async (
   generator: GeneratorConfig
 ) => {
   const nextAdminPath = path.dirname(
-    require.resolve("@premieroctet/next-admin")
+    require.resolve("@vaviloff/next-admin")
   );
 
   const generatorOutput = getEnvValue(generator.output!) ?? "";
