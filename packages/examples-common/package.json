@@ -1,6 +1,7 @@
 {
   "name": "examples-common",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "tsc -w",
     "build": "tsc",
